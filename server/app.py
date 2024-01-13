@@ -76,6 +76,7 @@ class PlantByID(Resource):
         #     "message": "Plant deleted"
         # }
 
+        # response = make_response(jsonify(response_body), 204)
         response = make_response("", 204)
 
         response.headers["Content-Type"] = "application/json"
